@@ -1,0 +1,36 @@
+{
+  "menu": [
+
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "slug": "",
+      "icon": "feather icon-home"
+    },
+    {
+      "url": "page-user-profile",
+      "name": "Profil",
+      "icon": "feather icon-users",
+      "slug": "user-profile"
+    },
+    {
+      "url": "",
+      "name": "Account",
+      "slug": "dashboard",
+      "icon": "feather icon-users",
+      "submenu": [
+        {
+          "url": "page-user-profile",
+          "name": "Profil",
+          "icon": "feather icon-users",
+          "slug": "user-profile"
+        },
+        {
+          "url": "",
+          "name": "Profil bearbeiten",
+          "icon": "feather icon-edit-1"
+        }
+      ]
+    }
+  ]
+}

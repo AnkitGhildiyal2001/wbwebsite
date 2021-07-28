@@ -1,0 +1,112 @@
+.strbtn{
+
+color:white;
+border:2px solid white;
+background-color: #8c8cf9;
+}
+.strbtn:hover{
+color:#8c8cf9 !important;
+background-color: white !important;
+}
+
+.my-logo{
+    display: inline-block !important;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1.5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar-wrapper .navbar-brand img {
+    height: 56px;
+}
+.navbar-item img {
+    max-height: 3.5rem;
+}
+.navbar-wrapper.navbar-faded .navbar-brand img {
+    height: 39px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+
+.navbar.navbar-light.is-dark-mobile {
+        background: #8c8cf9;
+}
+.navbar.navbar-light.is-dark-mobile .navbar-menu {
+    background : #ffffff;
+}
+.button.light-btn.btn-outlined {
+    border-color: #8c8cf9;
+background-color: transparent;
+}
+.navbar.navbar-light.is-dark-mobile .navbar-menu a {
+    color: #4a4a4a;
+}
+.my-logo{
+    color: #8c8cf9 !important;
+}
+.navbar-wrapper.is-transparent .navbar-item.is-slide::after, .navbar-wrapper.is-transparent .navbar-link.is-slide::after {
+    content: "";
+    display: block;
+    width: 0;
+    min-width: 0;
+    height: 1.6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #8c8cf9;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}
+.button.button-signup.btn-outlined.is-bold:hover{
+    background-color: #8c8cf9;
+
+}
+.button.light-btn.btn-outlined:hover{
+    color: #fff !important;
+}
+
+}
+@media only screen and (max-width: 768px)
+{
+.navbar.navbar-light.is-dark-mobile {
+        background: #8c8cf9 !important;
+}
+.navbar.navbar-light.is-dark-mobile .navbar-menu {
+    background : #ffffff;
+}
+.button.light-btn.btn-outlined {
+    border-color: #8c8cf9;
+    color: #8c8cf9 !important;
+    background-color: transparent;
+}
+.navbar.navbar-light.is-dark-mobile .navbar-menu a {
+    color: #4a4a4a;
+}
+.my-logo{
+    color: #8c8cf9 !important;
+}
+.navbar-wrapper.is-transparent .navbar-item.is-slide::after, .navbar-wrapper.is-transparent .navbar-link.is-slide::after {
+    content: "";
+    display: block;
+    width: 0;
+    min-width: 0;
+    height: 1.6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #8c8cf9;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}
+.button.button-signup.btn-outlined.is-bold:hover{
+    background-color: #8c8cf9;
+
+}
+.button.light-btn.btn-outlined:hover{
+    color: #fff !important;
+}
+
+}

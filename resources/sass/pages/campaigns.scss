@@ -1,0 +1,245 @@
+@import "../core/variables/variables";
+@import "../themes/dark-layout";
+
+body.dark-layout {
+    .was-validated .form-control:invalid, .form-control.is-invalid {
+        border-color:#ea5455!important;
+        border: 1px solid #ea5455!important;
+    }
+}
+
+.add-campaign-btn {
+    position: absolute;
+    right: 0;
+    top: -65px;
+}
+
+@media (max-width: 767.98px) {
+    .add-campaign-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .add-campaign-btn {
+        position: relative;
+        top: 0;
+    }
+}
+
+#description-error {
+    display: none!important;
+}
+
+textarea#description {
+  /*min-height: 150px;*/
+}
+
+#product-test, #coupon-code, #young-brudis, #hero-brudis {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3em 2em;
+    cursor: pointer;
+
+    a {
+        color: unset;
+    }
+
+    p {
+        margin-top: 1em;
+    }
+
+    &:hover {
+        .icon-text {
+            color: $primary;
+        }
+        i {
+            transform: scale(1.2);
+            color: $primary;
+        }
+    }
+
+    .icon-container {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 6em;
+            transition: transform .3s;
+        }
+    }
+}
+
+.add-icon-round {
+    position: absolute;
+    right: 8px;
+    bottom: 3px;
+    color: $gray-600;
+    cursor: pointer;
+    font-size: 22px;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.state-list {
+    list-style: none;
+    padding-left: 10px;
+
+    li {
+        hyphens: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+
+        .step_number {
+            border-radius: 50px;
+            margin-right: 1em;
+            border: 2px solid $gray-600;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $gray-600;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        &.active {
+            .step_number {
+                border: 2px solid $primary;
+                color: $primary;
+            }
+
+            p {
+                color: $primary;
+            }
+        }
+
+        &.done {
+            .step_number {
+                background-color: $primary;
+                color: $white;
+                border: 2px solid $primary;
+            }
+            p {
+                color: $gray-600;
+            }
+        }
+
+        &.dismissed {
+            .step_number {
+                background-color: $red;
+                color: $white;
+                border: 2px solid $red;
+            }
+            p {
+                color: $red;
+            }
+        }
+    }
+}
+
+.dark-layout {
+    .tags {
+        background: none repeat scroll 0 0 #262c49;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        padding: 0.5em;
+        width: 100%;
+
+        input {
+            background-color: transparent;
+            color: $white;
+        }
+    }
+}
+
+.tags {
+    background: none repeat scroll 0 0 $white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    width: 100%;
+    list-style: none;
+    height: auto;
+}
+
+.tags li.tagAdd, .tags li.addedTag {
+    float: left;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.tags li.tagAdd {
+    flex: 1;
+
+    input {
+        width: 100%;
+    }
+}
+
+.tags li.addedTag {
+    background: none repeat scroll 0 0 $primary;
+    border-radius: 2px;
+    color: #fff;
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.tags input, li.addedTag {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: none;
+    display: block;
+}
+.tags input:hover {
+    border: 1px solid #000;
+}
+
+.tags input {
+    background-color: transparent;
+}
+
+span.tagRemove {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 0.5em;
+}
+
+span.tagRemove::before {
+    content: "╳";
+}
+
+span.tagRemove:hover {
+    color: #222222;
+}
+
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        color: $primary;
+        font-size: 1.25em;
+        border: 1px solid $primary;
+        padding: 0.25em;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}

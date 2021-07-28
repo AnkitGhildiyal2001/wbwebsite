@@ -123,6 +123,10 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'startup' => env('STRIPE_PLAN_STARTUP_ID'),
+    'grow' => env('STRIPE_PLAN_GROW_ID'),
+    'ultimate' => env('STRIPE_PLAN_ULTIMATE_ID'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -228,6 +232,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Helper' => App\Helpers\Helper::class,
 
     ],
 

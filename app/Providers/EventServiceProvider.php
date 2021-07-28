@@ -14,11 +14,20 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
-        ],
-    ];
+     protected $listen = [
+         \SocialiteProviders\Manager\SocialiteWasCalled::class => [
+             // ... other providers
+             'SocialiteProviders\\Instagram\\InstagramExtendSocialite@handle',
+             'SocialiteProviders\\YouTube\\YouTubeExtendSocialite@handle',
+ 	        'SocialiteProviders\\Twitch\\TwitchExtendSocialite@handle',
+         ],
+         Registered::class => [
+             SendEmailVerificationNotification::class,
+         ],
+         'App\Events\CampaignCreated' => [
+             'App\Listeners\CampaignCreatedListener',
+         ],
+     ];
 
     /**
      * Register any events for your application.
@@ -27,6 +36,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+      parent::boot();
         //
     }
 }

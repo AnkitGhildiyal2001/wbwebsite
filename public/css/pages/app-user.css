@@ -1,0 +1,147 @@
+/*========================================================
+        DARK LAYOUT
+=========================================================*/
+
+/* user page css */
+
+/*---------------*/
+
+.users-list-wrapper .actions-dropodown {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 0.5rem;
+}
+
+.users-list-wrapper a,
+.users-list-wrapper span {
+  color: inherit;
+}
+
+.users-list-wrapper a i,
+.users-list-wrapper span i {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.users-list-wrapper a i.users-delete-icon,
+.users-list-wrapper span i.users-delete-icon {
+  font-size: 1.2rem;
+}
+
+.users-list-wrapper a i.users-delete-icon:hover,
+.users-list-wrapper span i.users-delete-icon:hover {
+  color: #ea5455;
+}
+
+.users-list-wrapper a i.users-edit-icon:hover,
+.users-list-wrapper span i.users-edit-icon:hover {
+  color: #7367f0;
+}
+
+.users-list-wrapper .badge {
+  text-transform: uppercase;
+}
+
+.users-list-wrapper .ag-icon-checkbox-unchecked {
+  color: #b8c2cc !important;
+  font-size: 22px;
+}
+
+.users-list-wrapper .ag-icon-checkbox-checked,
+.users-list-wrapper .ag-icon-checkbox-indeterminate {
+  font-size: 22px;
+}
+
+.page-users-view .users-view-image {
+  width: 150px;
+  flex: none !important;
+}
+
+.page-users-view table td {
+  padding-bottom: 0.8rem;
+  min-width: 140px;
+  word-break: break-word;
+}
+
+.users-view .users-avatar-shadow,
+.users-edit .users-avatar-shadow {
+  box-shadow: 2px 4px 14px 0 rgba(34, 41, 47, 0.4);
+}
+
+/*Profile card 4*/
+
+.card.social-card {
+  overflow: hidden;
+}
+
+.social-card .card-img-block {
+  float: left;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.social-card .card-body {
+  position: relative;
+}
+
+.social-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  top: -62px;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.social-card .card-img-block {
+  position: relative;
+}
+
+.social-card .card-img-block > .info-box {
+  position: absolute;
+  background: #7367f0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.social-card .card-img-block > .info-box .social-number {
+  font-size: 2rem;
+}
+
+.social-card .card-img-block > .info-box .logo {
+  margin: auto;
+  height: 40%;
+  justify-content: center;
+}
+
+.social-card .card-img-block > .info-box .logo img {
+  height: 100%;
+  filter: invert(100);
+}
+
+.social-card .card-img-block > .info-box .add-social {
+  font-size: 48px;
+}
+
+.social-card h5 {
+  font-weight: 600;
+}
+
+.social-card .card-text {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.social-card .icon-block {
+  float: left;
+  width: 100%;
+}
+
+.social-card .icon-block a {
+  text-decoration: none;
+}
+
