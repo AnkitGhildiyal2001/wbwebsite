@@ -21,6 +21,7 @@
         "laraveldaily/laravel-invoices": "^2.0",
         "league/flysystem-aws-s3-v3": "~1.0",
         "nicklaw5/twitch-api-php": "^5.0",
+        "pusher/pusher-php-server": "^7.0",
         "sentry/sentry-laravel": "^2.7",
         "socialiteproviders/facebook": "^4.1",
         "socialiteproviders/instagram": "^4.1",

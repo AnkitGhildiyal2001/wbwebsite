@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Laravel\Cashier\Billable;
 use Laravel\Passport\HasApiTokens;
